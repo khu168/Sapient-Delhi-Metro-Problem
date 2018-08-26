@@ -1,0 +1,14 @@
+Objective of this exercise is to create an automated system that has following functionality.
+
+Card should have a minimum balance of Rs. 50 at swipe-in. At swipe-out, system should calculate the fare based on below strategies. The fare must be deducted from the card. Card should have the sufficient balance otherwise user should not be able to exit.
+
+Weekday - Rs 7 * (Number of stations travelled)
+Weekend - Rs 5.5 * (Number of station traveled if it is Saturday or Sunday )
+(* there could be more such fare strategies in future).
+
+Additionally system needs to have functionality to generate some statistics/report defined below. So system needs to provide following API.
+
+
+API to get total foot-fall(swipe-in + swipe-out) for a given station.
+API to generate a "per-card report" on demand. It should print the following information on console.
+      Card<number> used to travel from <source_station> to station <destination_station>. Fare is Rs<x> and balance on card is Rs<x>.
